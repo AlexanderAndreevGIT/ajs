@@ -2,8 +2,12 @@
   "name": "@alexanderandreevgit/ajs",
   "version": "1.0.0",
   "main": "dist/index.js",
+  "publishConfig": {
+    "registry":"https://npm.pkg.github.com/"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --mode production"
   },
   "repository": {
     "type": "git",
@@ -15,5 +19,13 @@
     "url": "https://github.com/AlexanderAndreevGIT/ajs/issues"
   },
   "homepage": "https://github.com/AlexanderAndreevGIT/ajs#readme",
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "@babel/cli": "^7.15.7",
+    "@babel/core": "^7.15.8",
+    "@babel/preset-env": "^7.15.8",
+    "babel-loader": "^8.2.3",
+    "webpack": "^5.60.0",
+    "webpack-cli": "^4.9.1"
+  }
 }
